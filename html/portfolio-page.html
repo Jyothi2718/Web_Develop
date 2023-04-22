@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio page</title>
+</head>
+<body>
+    <!-- navbar section  -->
+    <header>
+        <ul style="list-style-type: none;">
+            <!-- # means empty link, if u want to put any links we can  -->
+            <li>
+                <a href="#about">About Amazon</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- main content  -->
+     
+    <main>
+       <section id="about">
+           <h3 align="center">About Amazon</h3>
+           <p>Amazon is the first, and only, marketplace to protect customers in third-party product liability cases. Our global selling partners―the majority of which are small and medium-sized businesses―have sold 7,400 products per minute in Amazon's store.</p>
+           <p>Its headquarters are in Seattle, Washington. Amazon.com is a vast Internet-based enterprise that sells books, music, movies, housewares, electronics, toys, and many other goods, either directly or as the middleman between </p>
+           <p>Amazon Launched as an Auction Site. ...
+            Amazon Users Can Donate to Charities When they Buy. ...
+            Amazon Has Convenience Stores With No Checkout. ...
+            It Sold Its First Book in 1995. ...
+            The Company Is Working on Drone Delivery. ...
+            A Bell Used to Ring.</p>
+        </section>
+       <section id="contact">
+           <h3 align="center">Contact Details</h3>
+           <form action="./script.js" method="POST">
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter your name" name="name" value="Jyothi" required maxlength="50">
+              </div>
+              <br>
+              <div>
+                <label for="Message">Message:</label>
+                <textarea name="Message" id="Message" cols="100" rows="5"></textarea>
+              </div><br>
+
+              <div>
+                    <label for="tel">Phone Number:</label>
+                    <input type="tel" placeholder="xxx-xxx-xxxx" pattern="\d{5}([- ]*)\d{6}" required>
+              </div>
+              <br>
+              <div>
+                <label for="date-time">Date and Time of Appointment:</label>
+                   <input type="datetime-local">
+              </div>
+              <br>
+              <div>
+                <label for="contact-type">Contact via call or whatsapp?</label>
+                <label for="call">Call:</label>
+                <input type="radio" name="contact-type" value="call">
+                
+                <label for="Wap">Whatsapp:</label>
+                <input type="radio" name="contact-type" value="wap">
+            </div>
+             <br>
+            <div>
+                <label for="time-slot">Time Slot:</label>
+                <label for="11-12">11am-12pm</label>
+                <input type="checkbox">
+
+                <label for="4-5">4pm-5pm</label>
+                <input type="checkbox">
+
+                <label for="11-12">11pm-12am</label>
+                <input type="checkbox">
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+           </form>
+       </section>
+       <section id="projects">
+        <h3 align="center">Projects</h3>
+        <table border="2" cellspacing="0" align="center">
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Project Link</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Brick breaker game</td>
+                <td>Brick Breaker is a Breakout clone which the player must smash a wall of bricks by deflecting a bouncing ball
+                    with a paddle.</td>
+                <td><a href="https://github.com/Jyothi2718/Brick-Breaker">https://github.com/Jyothi2718/Brick-Breaker</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Student result management</td>
+                <td>It is a software; developed to maintain the results of students studying in a college. It stores the details of
+                    students and their results in a database.</td>
+                <td><a href="https://github.com/Jyothi2718/Student-Result-Management">https://github.com/Jyothi2718/Student-Result-Management</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Calculator</td>
+                <td>A calculator is a device that performs arithmetic operations on numbers. Basic calculators can do only
+                    addition, subtraction, multiplication and division mathematical calculations.</td>
+                <td><a href="https://github.com/Jyothi2718/Calculator">https://github.com/Jyothi2718/Calculator</a></td>   
+            </tr>
+        </table>
+       </section>
+    </main>
+    <footer>
+        <h3 align="center">You can also connect with me on:</h3>
+        <div align="center">
+            <a href="#" target="_blank">Gmail</a>
+            <a href="#" target="_blank">Github</a>
+            <a href="#" target="_blank">Linkedlin</a>
+        </div>
+    </footer>
+</body>
+</html>
