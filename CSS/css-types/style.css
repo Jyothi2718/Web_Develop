@@ -1,0 +1,19 @@
+h1{  
+    
+    color: rgb(216, 60, 86);
+     font-size: 50px;
+    font-weight: 900;  /* it uses for font element boldness */
+} 
+
+h3{ 
+   
+    color:rgb(4, 54, 22);
+     font-size: 40px;
+    font-weight: 500;  /* it uses for font element boldness */
+}
+
+h5{  
+    color:hsl(24, 76%, 47%);
+     font-size: 20px;
+    font-weight: 500;  /* it uses for font element boldness */
+}
