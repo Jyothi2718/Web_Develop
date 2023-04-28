@@ -18,7 +18,7 @@
 
 /* Simple Selectors */
 /* Tag Selector: We use html tags to select an element */
-h1{  
+ h1{  
   border: 3px solid #0fd7ff;  
   color: rgb(240, 4, 43);
    font-size: 20px;
@@ -96,6 +96,6 @@ h5,h6{
 #btn-3{
   background-color: #f20404;
 }
-
+ 
 
 

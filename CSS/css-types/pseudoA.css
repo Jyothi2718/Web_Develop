@@ -1,0 +1,14 @@
+/* ATTRIBUTE SELECTOR */
+/* The [attribute] selector is used to select elements with a specified attribute. */
+ /* SYNTAX:- 
+  selector[attribute_name="attribute-value"]   */
+
+  input[type="text"]{
+    border: 2px solid #0000ff;
+    border-radius: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  a[target="_blank"]{
+    background-color: yellow;
+  }

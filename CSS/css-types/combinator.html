@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Types</title>
+    <link rel="stylesheet" href="./selec.css">
+</head>
+<body>
+    <p id="para"></p>
+    <h1 class="head">Combinator Selector</h1>
+    
+    <h2 class="para">CSS Combinators clarifies the relationship between two selectors, whereas the selectors in CSS are used to select the content for styling.</h2>
+    <div>
+        <h2>There are four types of combinators in CSS that are listed as follows: <br>
+            General sibling selector (~) <br>
+              Adjacent sibling selector (+) <br>
+              Child selector (>) <br>
+              Descendant selector (space)</h2>
+    </div>
+        <h2><b>General Sibling Selector (~):</b> It uses the tlide (~) sign as the separator between the elements. It selects the elements that follow the elements of first selector, and both of them are the children of the same parent. It can be used for selecting the group of elements that share the common parent element.</h2>
+        <h2>It is useful when we have to select the siblings of an element even if they are not adjacent directly.</h2>
+    
+        <p><b>Adjacent Sibling Selector (+):</b> This sibling selector selects the adjacent element, or we can say that the element which is next to the specified tag. <br>
+        It uses the plus (+) sign as the separator between the elements. <br>It only selects the element which is just next to the specified first element.</p>
+     
+    <div id="head">
+     <h3>Child Selector (>):</h3>
+     <div>
+        <h3>It selects the direct descendant of the parent. This combinator only matches the elements that are the immediate child in the document tree.</h3>
+        <h3>It uses the greater than (>) sign as the separator between the elements. </h3>
+     </div>
+     <p class="para-1">The parent element must always be placed at the left of the ">". If we remove the greater than (>) symbol that designates this as a child combinator, then it will become the descendant selector.</p>
+    </div>
+
+     <span>
+        <p class="head-1">Descendant Selector (space):</p>
+        <div>
+            <h4>It uses the space as the separator between the elements. The CSS descendant selector is used to match the descendant elements of a particular element and represent it using a single space.</h4>
+            <h4>he word descendant indicates nested anywhere in the DOM tree. It can be a direct child or deeper than five levels, but it will still be referred to as a descendant.</h4>
+        </div>
+        <p class="head-1">It combines two selectors in which the first selector represents an ancestor (parent, parent's parent, etc.), and the second selector represents descendants. The elements matched by the second selector are selected if they have an ancestor element that matches the first selector.</p>
+     </span>
+
+    </body>
+</html>

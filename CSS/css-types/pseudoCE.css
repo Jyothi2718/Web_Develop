@@ -1,0 +1,110 @@
+/* Syntax:
+any_selector:pseudo-class{
+    property:value;
+  }  */
+
+ a{ /*if we want to set default colour*/
+    color: chartreuse; 
+ }
+ 
+/* :LINK => it selects all the unvisted links  */
+/* it adds styles to the unvisited links */
+a:link{
+    color: crimson;
+}
+
+/* :VISITED = It adds style to visted links */
+a:visited{
+    color: darkgreen;
+}
+
+/* :HOVER => it adds style when you move your cursor over particular element  */
+a:hover{
+    color: red;
+}
+
+/* :active => selects all active links  */
+a:active{
+    color: darkmagenta;
+}
+
+/* :focus => it used to select an element that is focused on(used with input tags only) */
+
+input:focus{
+    background-color: aqua;
+}
+
+.btn{
+    border: 3px solid red;
+      border-radius: 30px;
+      padding: 10px 40px;
+      width: 20%;
+      font-size: 15px;
+      font-weight: 700;
+      color: black;
+      background-color: rgb(57, 223, 238);
+      
+  }
+  
+  /* we can use hover to change background while we click on button  */
+  .btn:hover{
+    background-color: white;
+    border: 4px solid darkmagenta;
+    color: blue;
+    scale: 2 ;
+  }
+ 
+  /* :first-child => It matches a particular element, which is the first child of another element and adds a special effect to the corresponding element. */
+  /* :last-child => it add special effects to last child as like as first child */
+  .container p:first-child{
+    color: coral;
+  }
+  
+  #head p:last-child{
+    color: darkblue;
+  }
+ 
+  /* selects alternate one  */
+  .para p:nth-child(2n+1){ /* for odd one */
+    color: fuchsia;
+  }
+
+  #container p:nth-child(2n):hover{ /*for even one*/
+    color: indigo;
+  }
+
+  /* PSEUDO ELEMENTS SELECTORS  */
+
+  /* DEF : pseudo-elements are used to style the specific part of an element.  */
+  /*SYNTAX:
+  selector::pseudo-element {  
+    property: value;  
+  }  */
+ 
+  /* ::first-line => It styles the first line of the text. */
+  .element::first-line{
+    color: dodgerblue;
+  }
+
+  /* ::first-letter => It selects the first letter of the text. */
+   .element::first-letter{
+    color: darkred;
+   }
+
+   /* ::before =>	It is used to add something before the element's content. */
+     .element::before{
+      content: "A pseudo-class can be defined as a keyword which is combined to a selector that defines the special state of the selected elements.";
+     }
+     #element-1::before{
+      content: url(./web_dev.png) ;
+     }
+     .element:hover{ /*we can increase size of elements*/
+      font-size: 20px;
+     }
+      
+
+   /* ::after =>	It is used to add something after the element's content. */
+   .element::after{
+    content: "As an example, a pseudo-element can be used to style the first letter or the first line of an element. The pseudo-elements can also be used to insert the content after or before an element.";
+    color: orangered;
+   }

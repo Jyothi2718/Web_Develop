@@ -1,0 +1,54 @@
+/* COMBINATOR SELECTOR  */
+/* 1.GENERAL SIBILING SELECTOR (~)  */
+
+h1 ~ .para{  /*target all the h2 tags that are sibilings of div tag*/
+  color:firebrick; /*those h2 tags come after div tags are effected not before */
+}
+
+h2 ~ div{ /*target all the div tags that are sibilings of h2 tag*/
+  color:green; /*those div tags come after h2 tags are effected not before */
+  
+}
+.para ~ h2{
+  color:blue;
+}
+
+/* 2.ADJACENT SIBILING SELECTOR (+) */
+/* Targets the immediate right element of the main element  */
+
+h2 + p{
+  font-size: 25px;
+  font-weight: 700;
+  color:crimson;
+}
+
+#para + .head{
+ color: red;
+}
+
+/* 3.CHILD SIBILING SELECTOR (>) */
+/* targets all the direct children  */
+div > h3{
+  color: #a86007;
+  font-size: 25px;
+}
+#head > .para-1{
+  color: blueviolet;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* 4. DESCENDANT SIBILING SELECTOR (SPACE) */
+ /* targets all the children elements */
+ span div{
+  color: deeppink;
+  font-size: 25px;
+ }
+ span .head-1{
+  color: indigo;
+  font-size: 25px;
+  font-weight: 700;
+ }
+
+
+ 
