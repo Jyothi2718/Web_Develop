@@ -1,0 +1,40 @@
+/* Static : It specifies that elements is in original position  and also it is default value*/
+ 
+
+
+.parent{
+    position: relative;
+}
+
+.child{
+    position: static;
+     
+}
+
+.child_one{
+
+    position: relative;
+    left: 20px;
+    top: 20px;
+} 
+
+.child_two{
+   position: absolute;
+   top: 20px;
+
+}
+
+.child_three{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+nav{
+    position: sticky;
+    background-color: yellow;
+    width: 100%;
+    top: 0px;
+    padding: 30px;
+    text-align: center;
+}

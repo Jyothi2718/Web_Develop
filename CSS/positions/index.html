@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .parent{
+            height: 200vh;
+            background-color: aqua;
+            color: black;
+            padding: 30px;
+        }
+
+        .child{
+          padding: 30px;  
+        }
+
+        .child_one{
+            background-color: green;
+        }
+
+        .child_two{
+            background-color: blue;
+        }
+
+        .child_three{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Positions in CSS</h1>
+    <ol>
+        <li>Static : The original or default position of an element. </li>
+        <li>Relativen: Element is positioned relative to it's normal/original position.
+          Same as static positioning, just that here we can move elements by adding  offset values.
+          Elements stays in normal document flow.
+        </li>
+        <li>Absolute : Elements is positioned relative to its's parent.
+            If parent is no  present, then element is positioned relative to the main document.
+            Element is removed from the normal document flow, no space is created for that element.
+        </li>
+        <li>Fixed : Element is positioned relative to the viewport.
+            Element doesn't move and stays in the same position even after scrollling.
+            Element is removed from the normal flow.
+        </li>
+        <li>Sticky : Element is positioned according to the normal flow.
+            Till hits the top, it has normal position, after it touches the top it becomes fixed.</li>
+    </ol>
+    <div class="parent">
+         parent 
+         <div class=" child child_one ">One</div>
+         <div class=" child child_two">Two</div>
+         <div class=" child child_three">Three</div>
+         <nav>
+            This is nav bar.
+         </nav>         
+    </div>
+</body>
+</html>

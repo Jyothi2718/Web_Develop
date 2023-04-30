@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading in CSS  </title> 
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        p{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    
+<p><b>Cascading : </b>cascading is an algorithum that helps you solve these conflicts where you have multiple CSS rules apply to the same HTML elements</p>
+
+<ul>
+    <li>User-agent style with important</li>
+    <li>Local-user style with important</li>
+    <li>Authored CSS with important</li>
+    <li>Authored CSS</li>
+    <li>Local-user</li>
+    <li>User-agent</li>
+</ul>
+<span class="para">If there are two or more CSS rules that point to the same element, the selector with the highest specificity value will "win", and its style declaration will be applied to that HTML element.</span>
+<span>Think of specificity as a score/rank that determines which style declaration is ultimately applied to an element.</span>
+
+</body>
+</html>   

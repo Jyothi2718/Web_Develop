@@ -1,0 +1,47 @@
+
+/* 1) position and order of appearance
+   2) origin
+   3)importance
+   4)specificity  */
+
+
+
+p{
+    color: blueviolet;
+    /* when we write important , it takes highest priority  */
+    color: indigo!important; 
+}
+
+/* which one is  important? */
+/*  User-agent style with important > local-user style with important > authored CSS with important rule > Authored-CSS > Local-user  > User-agent  */
+
+  ::marker{
+    text-align: end!important;
+  }
+
+ /* SPECIFICITY */
+ /* Think of specificity as a score/rank that determines which style declaration is ultimately applied to an element. */
+ 
+ /* class,pseudo-class, attribute selectors : 10  */
+ .para{
+  font-size: 50px; 
+  color: deeppink;
+ }
+ 
+ 
+ /* pseudo-elements and tags selector : 1  */
+ span{
+  font-size: 20px;
+  color: orangered;
+ }
+
+ ::marker{
+  color: yellow;
+ }
+
+ /* Universal selector(*) : no specificity(0) */
+
+ *{
+  color: green;
+  
+}
