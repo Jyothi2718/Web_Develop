@@ -1,0 +1,34 @@
+.container{
+    background-color: darksalmon;
+    height: 400px;
+    display: flex;  /* to ARRANGE THEM IN ROW FORMAT*/
+    flex-direction: row-reverse;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    flex-flow: row wrap; /*flow-flex is shorthand of flex-direction and flex-wrap*/
+    /* justify-content : used to set the alignment in main axis (x-axis)   */
+     justify-content: center;
+    justify-content: space-between; /*there is no space between left and right*/
+     justify-content: space-around; /*there is single space between left and right & in middle it takes double space */
+    justify-content: center; /* all the elemets have equal space right, left , between also  */
+   
+    /* it is used to arrange the elements w.r.t y-axis*/
+   align-items: center; /*it works only in single row(flex-wrap: nowrap;) */
+    
+    /* align-content is also used to arrange the elements w.r.t y-axis */
+    align-content: center; /*it is used only when u have multiple rows and ( flex-wrap: wrap)*/
+    row-gap: 10px;
+    column-gap: 30px;
+
+
+}
+
+ .container .item{
+  background-color: crimson;
+  width: 20%;
+  font-size: 20px;
+  color: greenyellow;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 2px;
+}
