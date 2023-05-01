@@ -1,0 +1,12 @@
+div{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+span{
+    /* display: none; it hiddn=en the elements */
+    visibility: hidden;
+    width: 20%;
+    border: 2px solid black;
+}

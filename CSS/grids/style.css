@@ -1,0 +1,24 @@
+.container{
+    width: 100%;
+    background-color: cyan;
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    /* repeat(no.of columns, width of each column) */
+    /* auto(width) , auto(no of columns)            */
+    /* grid-template-columns: auto auto; */
+    /* grid-template-columns: 1fr 1fr 2fr; */
+    /* grid-template-columns: repeat(2,1fr) 2fr; */
+    grid-template-columns: repeat(2, auto) 2fr;
+    grid-template-rows:repeat(12, 20%) ; 
+    /* column-gap: 4px;
+    row-gap: 5px; */
+    /* gap: it is shorthand for row-gap & column-gap */
+    gap: 10px 12px;
+}
+
+.container .item{
+   
+    background-color: hotpink;
+    color: indigo;
+    margin: 5px;
+}
